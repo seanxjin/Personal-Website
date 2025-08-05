@@ -1,0 +1,40 @@
+#navbar-wrapper {
+    position: absolute;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    background: transparent;
+    box-shadow: 0px 0px 10px 7px rgba(112, 118, 177, 0.8);
+}
+
+#navbar-container a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+#navbar-container a:hover {
+    color: rgba(133, 99, 196, 0.8);
+}
+
+#navbar-container a:focus {
+    color: white;
+}
+
+#navbar-options {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}

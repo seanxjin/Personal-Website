@@ -1,0 +1,6 @@
+#starry-canvas-container {
+    position: absolute;
+    width: 100%;
+    border: 0;
+    z-index: -1;
+}
