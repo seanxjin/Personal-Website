@@ -4,6 +4,12 @@
     width: 100%;
     justify-content: center;
     padding: 2rem 0;
+    animation: 2s ease-out 0s 1 forwards fadeIn;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 #navbar-container {
@@ -28,9 +34,6 @@
     color: rgba(133, 99, 196, 0.8);
 }
 
-#navbar-container a:focus {
-    color: white;
-}
 
 #navbar-options {
     list-style: none;
