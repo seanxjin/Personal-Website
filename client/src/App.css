@@ -11,33 +11,16 @@
             rgba(0, 0, 0, 1) 100%);
 }
 
-#test {
-    height: 100px;
-    width: 100vw;
-    background-color: white;
-    border: 0;
-}
-
 #title-name-container {
     position: relative;
     top: 13rem;
     left: 5rem;
 }
 
-#title-name-container h1 {
+.title-name-text {
     color: #ffffff;
     text-shadow: 0px 0px 25px rgb(255, 255, 255);
     font-size: 3.5rem;
-    font-family: "Boldonse", system-ui;
-    letter-spacing: 10px;
-}
-
-#title-name-container span {
-    color: #ffffff;
-    text-shadow: 0px 0px 20px rgb(255, 255, 255);
-    display: block;
-    padding-top: 2rem;
-    font-size: 1.7rem;
     font-family: "Boldonse", system-ui;
     letter-spacing: 10px;
 }

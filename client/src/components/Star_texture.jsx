@@ -70,14 +70,14 @@ export default function Star_texture() {
                         key={index}
                         style={{ ...meteorStyles }}
                         initial={{
-                            rotate: -40,
+                            rotate: -45,
                             x: "0rem",
                             y: "0rem",
                             scale: 2,
                             opacity: 1
                         }}
                         animate={{
-                            x: "-25rem",
+                            x: "-35rem",
                             y: "35rem",
                             scale: 0,
                             opacity: 0,
