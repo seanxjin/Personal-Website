@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import Star_texture from './components/Star_texture';
 import RotatingAspirations from './components/RotatingAspirations';
 import { motion } from "motion/react";
+import BackgroundWallpaper from './components/BackgroundWallpaper';
 
 
 const introMessage = "Hello, I'm Sean";
