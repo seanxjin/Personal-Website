@@ -16,6 +16,7 @@ function App() {
             <div id='hero-page-container'>
                 <Star_texture />
                 <Navbar />
+                <BackgroundWallpaper />
                 <motion.div
                     id='title-name-container'
                     variants={{

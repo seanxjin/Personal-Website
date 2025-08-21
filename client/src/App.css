@@ -3,14 +3,14 @@
     width: 100%;
     height: 100%;
     display: block;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), #000814, #002F4A, #005A75);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), #000814, #002F4A, #005A75 75%);
 }
 
 #title-name-container {
     position: relative;
     top: 13rem;
     left: 5rem;
-    z-index: 2;
+    z-index: 10;
 }
 
 .title-name-text {

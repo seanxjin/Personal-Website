@@ -3,7 +3,7 @@ import "./RotatingAspirations.css";
 import { AnimatePresence, motion } from "motion/react";
 
 const aspireMessage = "An Aspiring ";
-const aspireRotation = ["Data Scientist", "Full-Stack Developer", "Explorer", "Learner", "Adventurer", "Creator"];
+const aspireRotation = ["Data Scientist", "Developer", "Explorer", "Learner", "Adventurer", "Creator"];
 
 export default function RotatingAspirations() {
 
