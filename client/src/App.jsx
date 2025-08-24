@@ -5,6 +5,7 @@ import RotatingAspirations from './components/RotatingAspirations';
 import BackgroundWallpaper from './components/BackgroundWallpaper';
 import { motion, useScroll } from "motion/react";
 import { useRef } from 'react';
+import About from './components/About';
 
 
 
@@ -16,14 +17,14 @@ function App() {
 
 
     const container = useRef();
-    const { scrollYProgress } = useScroll();
+    const { scrollY } = useScroll();
 
     return (
         <>
             <div ref={container} id='hero-page-container'>
                 <Star_texture />
                 <Navbar />
-                <BackgroundWallpaper scrollYProgress={scrollYProgress}/>
+                <BackgroundWallpaper scrollY={scrollY}/>
                 <motion.div
                     id='title-name-container'
                     variants={{
@@ -48,9 +49,7 @@ function App() {
                     <RotatingAspirations />
                 </motion.div>
             </div >
-            <div id='information-container'>
-
-            </div>
+            <About />
         </>
 
     );

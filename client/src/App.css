@@ -4,7 +4,7 @@
     height: 100vh;
     display: block;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), #000814, #002F4A, #005A75 75%);
-    overflow-y: hidden;
+    overflow-x: hidden; 
 }
 
 #title-name-container {
@@ -20,10 +20,4 @@
     font-size: 3.5rem;
     font-family: "Boldonse", system-ui;
     letter-spacing: 10px;
-}
-
-#information-container {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
 }
