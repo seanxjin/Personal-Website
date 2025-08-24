@@ -9,28 +9,19 @@
 
 #about-container h1,
 #about-container p,
-#about-container li {
+#about-container h2 {
     color: white;
-    margin-bottom: 2rem;
     font-family: "Boldonse", system-ui;
     word-spacing: 0.55rem;
 }
 
 #about-container p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     letter-spacing: 0.1rem;
     word-spacing: normal;
-    margin-bottom: 1.1rem;
     width: 100%;
 }
 
-#about-container li {
-    font-size: 0.7rem;
-    margin-left: 1rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 0.5rem;
-    word-spacing: normal;
-}
 
 #about {
     display: flex;
@@ -41,4 +32,16 @@
 #about-content-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#about-skills-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-skills-icons {
+    display: flex;
+    gap: 2rem;
 }
