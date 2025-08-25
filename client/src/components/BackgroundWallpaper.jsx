@@ -64,8 +64,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 ease: "easeIn"
             }} src={bird1} alt="bird" style={{
                 position: "absolute",
-                bottom: "20rem",
-                right: "23rem",
+                bottom: "32%",
+                right: "37%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -84,8 +84,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 ease: "easeIn"
             }} src={bird2} alt="bird" style={{
                 position: "absolute",
-                bottom: "16rem",
-                right: "29rem",
+                bottom: "26%",
+                right: "46%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -104,8 +104,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 ease: "easeIn"
             }} src={bird3} alt="bird" style={{
                 position: "absolute",
-                bottom: "13rem",
-                right: "36rem",
+                bottom: "21%",
+                right: "58%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -120,8 +120,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 ease: "easeIn"
             }} src={bird5} alt="bird" style={{
                 position: "absolute",
-                bottom: "20rem",
-                right: "11rem",
+                bottom: "50%",
+                right: "18%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -136,8 +136,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 ease: "easeIn"
             }} src={bird7} alt="bird" style={{
                 position: "absolute",
-                bottom: "25rem",
-                right: "16rem",
+                bottom: "45%",
+                right: "26%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -152,8 +152,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 ease: "easeIn"
             }} src={bird8} alt="bird" style={{
                 position: "absolute",
-                bottom: "25rem",
-                right: "25rem",
+                bottom: "40%",
+                right: "40%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY

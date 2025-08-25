@@ -1,7 +1,14 @@
 import { motion } from "motion/react";
 
+
 export default function Icon({ image, alt, style, ...props }) {
+
     return (
-        <img style={{ width: "2.5rem", height: "2.5rem", ...style }} src={image} alt={alt} {...props} />
+        <>
+            <motion.img
+                whileHover={{
+                    scale: 1.1,
+                }} style={{ width: "25%", borderRadius: "10%", ...style }} src={image} alt={alt} {...props} />
+        </>
     );
 }

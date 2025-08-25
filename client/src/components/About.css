@@ -43,5 +43,21 @@
 
 #about-skills-icons {
     display: flex;
-    gap: 2rem;
+    gap: 5%;
+    height: 20%;
 }
+
+#about-achievements-container {
+    margin-top: 5%;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#about-achievements {
+    transform-style: preserve-3d;
+    perspective: 1000;
+    display: flex;
+    border-radius: 10px;
+}
+
