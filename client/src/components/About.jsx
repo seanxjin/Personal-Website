@@ -92,6 +92,9 @@ export default function About() {
                     </motion.div>
                 </motion.div>
             </div>
+            <div>
+                
+            </div>
             <Footer />
         </div>
     );

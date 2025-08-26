@@ -1,0 +1,16 @@
+h1, h2, p {
+    font-family: "Boldonse", system-ui;
+    color: white;
+}
+
+#projects-container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+}
+
+#projects-title {
+    position: absolute;
+    margin-top: 10%;
+}
