@@ -1,0 +1,23 @@
+#footer-container {
+    margin-top: 8.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-text {
+    display: inline-block;
+    height: fit-content;
+}
+
+#footer-socials {
+    display: flex;
+    gap: 20%;
+    justify-content: flex-start;
+}
+
+#footer-socials svg {
+    width: 100%;
+    height: 100%;
+}
+

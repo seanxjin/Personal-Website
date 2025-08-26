@@ -10,16 +10,9 @@ import sqliteIcon from "../assets/sqlite.svg";
 import pythonIcon from "../assets/python.svg";
 import Icon from "./Icon";
 import { motion } from "motion/react";
-import Achievement from "./Achievement";
+import Footer from "./Footer";
 
 export default function About() {
-
-    const listOfAchievements = [
-        { image: "/deans-list.png", description: "UBC Dean's List, maintaing 4.30 GPA" },
-        { image: "/scholarship.png", description: "Awarded $2500 for maintaining a grade average above 90% in highschool" },
-        {image: , description: }
-    ]
-
 
     return (
         <div id="about-container">
@@ -30,11 +23,11 @@ export default function About() {
                     style={{
                         objectFit: "cover",
                         width: "40%",
-                        height: "auto",
+                        height: "40%",
                         borderRadius: "20px"
                     }}
                     variants={{
-                        hidden: { opacity: 0, y: 200 },
+                        hidden: { opacity: 0, y: 100 },
                         inView: { opacity: 1, y: 0 }
                     }}
                     initial='hidden' whileInView='inView' transition={{ duration: 1.5, type: "tween", ease: "easeOut" }}
@@ -76,48 +69,30 @@ export default function About() {
                         transition={{ duration: 1, delay: 0.9, type: "tween", ease: "easeOut" }}>
                         Outside of all that nerdiness, I enjoy long-distance running, exploring the outdoors, jamming on guitar, and playing badminton.
                     </motion.p>
-                    <div id="about-skills-container">
-                        <motion.h2
-                            variants={{
-                                hidden: { opacity: 0, x: 200 },
-                                inView: { opacity: 1, x: 0 }
-                            }}
-                            transition={{ duration: 1, delay: 1.2, type: "tween", ease: "easeOut" }}
-                            style={{ marginBottom: "5%" }}>Technologies</motion.h2>
-                        <motion.div
-                            variants={{
-                                hidden: { opacity: 0 },
-                                inView: { opacity: 1 }
-                            }}
-                            transition={{ duration: 1, delay: 1.5, type: "tween", ease: "easeIn" }} id="about-skills-icons">
-                            <Icon image={javascriptIcon} alt="javascript-icon" />
-                            <Icon image={nodeIcon} alt="node-icon" />
-                            <Icon image={expressIcon} alt="express-icon" />
-                            <Icon image={reactIcon} alt="react-icon" />
-                            <Icon image={motionIcon} style={{ backgroundColor: "yellow" }} alt="motion-icon" />
-                            <Icon image={postgresIcon} alt="postgres-icon" />
-                            <Icon image={sqliteIcon} alt="sqlite-icon" />
-                            <Icon image={pythonIcon} alt="python-icon" />
-                        </motion.div>
-                    </div>
+                    <motion.h2
+                        variants={{
+                            hidden: { opacity: 0, x: 200 },
+                            inView: { opacity: 1, x: 0 }
+                        }}
+                        transition={{ duration: 1, delay: 1.2, type: "tween", ease: "easeOut" }}>Technologies</motion.h2>
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0 },
+                            inView: { opacity: 1 }
+                        }}
+                        transition={{ duration: 1, delay: 1.5, type: "tween", ease: "easeIn" }} id="about-skills-icons">
+                        <Icon image={javascriptIcon} alt="javascript-icon" />
+                        <Icon image={nodeIcon} alt="node-icon" />
+                        <Icon image={expressIcon} alt="express-icon" />
+                        <Icon image={reactIcon} alt="react-icon" />
+                        <Icon image={motionIcon} style={{ backgroundColor: "yellow" }} alt="motion-icon" />
+                        <Icon image={postgresIcon} alt="postgres-icon" />
+                        <Icon image={sqliteIcon} alt="sqlite-icon" />
+                        <Icon image={pythonIcon} alt="python-icon" />
+                    </motion.div>
                 </motion.div>
             </div>
-            <div id="about-achievements-container">
-                <h1>Awards</h1>
-                <motion.div
-                    id="about-achievements"
-                    whileInView={{
-                        x: ["0%", "-100%"],
-                    }} transition={{
-                        repeat: Infinity,
-                        repeatType: "loop",
-                        ease: "linear",
-                        duration: 10
-                    }}>
-                    <Achievement />
-                </motion.div>
-            </div>
-
+            <Footer />
         </div>
     );
 }
