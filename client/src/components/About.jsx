@@ -11,6 +11,7 @@ import pythonIcon from "../assets/python.svg";
 import Icon from "./Icon";
 import { motion } from "motion/react";
 import Footer from "./Footer";
+import Button1 from "./Button1";
 
 export default function About() {
 
@@ -92,8 +93,9 @@ export default function About() {
                     </motion.div>
                 </motion.div>
             </div>
-            <div>
-                
+            <div style={{width: "100%", display: "flex", justifyContent: "space-between", marginTop: "10%"}}>
+                <Button1 name="Experiences" link="/experience" left={true} />
+                <Button1 name="Projects" link="/projects" left={false} />
             </div>
             <Footer />
         </div>

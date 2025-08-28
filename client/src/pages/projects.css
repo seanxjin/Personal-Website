@@ -7,10 +7,28 @@ h1, h2, p {
     position: relative;
     width: 100vw;
     min-height: 100vh;
+    height: auto;
     background-color: black;
+    z-index: 0;
 }
 
-#projects-title {
+#projects-inner-container {
     position: absolute;
     margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+#projects-card-container {
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5%;
 }

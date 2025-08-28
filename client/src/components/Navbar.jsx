@@ -1,23 +1,24 @@
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
     return (
         <div id='navbar-wrapper'>
             <nav id="navbar-container">
-                <a href='/'>Sean Jin</a>
+                <Link to='/'>Sean Jin</Link>
                 <ul id='navbar-options'>
                     <li className='navbar-options-element'>
-                        <a href='/'>Home</a>
+                        <Link to='/'>Home</Link>
                     </li>
                     <li className='navbar-options-element'>
-                        <a href='/about'>About</a>
+                        <Link to='/about'>About</Link>
                     </li>
                     <li className='navbar-options-element'>
-                        <a href='/experience'>Experience</a>
+                        <Link to='/experience'>Experience</Link>
                     </li>
                     <li className='navbar-options-element'>
-                        <a href='/projects'>Projects</a>
+                        <Link to='/projects'>Projects</Link>
                     </li>
                 </ul>
             </nav>

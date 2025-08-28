@@ -1,0 +1,13 @@
+.button {
+    padding: 1% 7% 1% 7%;
+    color: white;
+    font-family: "Boldonse", system-ui;
+    border: 0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
