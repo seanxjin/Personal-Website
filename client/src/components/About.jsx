@@ -52,7 +52,7 @@ export default function About() {
                             inView: { opacity: 1, x: 0 }
                         }}
                         transition={{ duration: 1, delay: 0.3, type: "tween", ease: "easeOut" }}>
-                        Hello! I'm a 2nd year CS + Stats Major at the University of British Columbia. I like working on fun brain teaser problems and cool projects that challenge my creativity and problem-solving skills!
+                        Hello! I'm a 2nd year CS + Stats Major at the University of British Columbia. I love working on fun brain teaser problems and cool projects that challenge my creativity and problem-solving skills!
                     </motion.p>
                     <motion.p
                         variants={{
@@ -60,7 +60,7 @@ export default function About() {
                             inView: { opacity: 1, x: 0 }
                         }}
                         transition={{ duration: 1, delay: 0.6, type: "tween", ease: "easeOut" }}>
-                        My technical interests include full-stack development, data science, and AI/ML
+                        My technical interests include full-stack development, data science, and AI/ML.
                     </motion.p>
                     <motion.p
                         variants={{
@@ -93,7 +93,7 @@ export default function About() {
                     </motion.div>
                 </motion.div>
             </div>
-            <div style={{width: "100%", display: "flex", justifyContent: "space-between", marginTop: "10%"}}>
+            <div style={{width: "100%", display: "flex", justifyContent: "space-between", marginTop: "7rem"}}>
                 <Button1 name="Experiences" link="/experience" left={true} />
                 <Button1 name="Projects" link="/projects" left={false} />
             </div>

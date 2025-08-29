@@ -1,9 +1,9 @@
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer({styles}) {
     return (
         <>
-            <div id="footer-container">
+            <div id="footer-container" style={{...styles}}>
                 <div id="footer-text">
                     <p>Sean Jin @ 2025</p>
                 </div>

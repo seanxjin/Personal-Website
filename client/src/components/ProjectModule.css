@@ -1,3 +1,35 @@
 .project-dialogue {
-    
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 15px white;
+    background-color: #232323;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 35rem;
+    height: 35rem;
+    transform: translate(-50%, -50%);
+
+}
+
+.project-dialogue::backdrop {
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.project-dialogue-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.project-dialogue-div {
+
+}
+
+.dialog-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2%;
+    border-radius: 15px;
 }

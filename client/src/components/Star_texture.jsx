@@ -2,7 +2,7 @@ import "./Star_texture.css";
 import { motion } from "motion/react"
 import { useState, useEffect } from "react"
 
-export default function Star_texture() {
+export default function Star_texture({ children }) {
 
     const [stars, setStars] = useState([]);
     const [meteors, setMeteors] = useState([]);
@@ -63,8 +63,8 @@ export default function Star_texture() {
             })}
             {meteors.map((meteor, index) => {
                 const { tail, ...meteorStyles } = meteor;
-                const sharedDelay = Math.random() * 30 + 5;
-                const sharedRepeatDelay = Math.random() * 30 + 5;
+                const sharedDelay = Math.random() * 5 + 5;
+                const sharedRepeatDelay = Math.random() * 10 + 5;
                 return (
                     <motion.div
                         key={index}
@@ -103,6 +103,7 @@ export default function Star_texture() {
                     </motion.div>
                 );
             })}
+            {children}
         </div>
     );
 }

@@ -1,14 +1,5 @@
-#hero-page-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), #000814, #002F4A, #005A75 75%);
-    overflow-x: hidden; 
-}
-
 #title-name-container {
-    position: relative;
+    position: absolute;
     top: 32%;
     left: 6%;
     z-index: 10;

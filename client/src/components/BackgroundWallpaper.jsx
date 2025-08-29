@@ -13,12 +13,12 @@ import { motion, useTransform } from "motion/react";
 export default function BackgroundWallpaper({ scrollY }) {
 
 
-    const leftTree = useTransform(scrollY, [0, 900], [0, -250]);
-    const rightTree = useTransform(scrollY, [0, 900], [0, 250]);
+    const leftTree = useTransform(scrollY, [0, 600], [0, -500]);
+    const rightTree = useTransform(scrollY, [0, 600], [0, 500]);
     const birdMoveX = useTransform(scrollY, [0, 900], [0, 500]);
     const birdMoveY = useTransform(scrollY, [0, 900], [0, -150]);
-    const leftMountain = useTransform(scrollY, [0, 900], [0, -100]);
-    const rightMountain = useTransform(scrollY, [0, 900], [0, 100]);
+    const leftMountain = useTransform(scrollY, [0, 900], [0, -300]);
+    const rightMountain = useTransform(scrollY, [0, 900], [0, 300]);
 
     return (
         <>

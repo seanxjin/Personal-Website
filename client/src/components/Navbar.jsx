@@ -12,7 +12,7 @@ export default function Navbar() {
                         <Link to='/'>Home</Link>
                     </li>
                     <li className='navbar-options-element'>
-                        <Link to='/about'>About</Link>
+                        <Link onClick={() => document.getElementById('about-container').scrollIntoView({ behavior: 'smooth' })} >About</Link>
                     </li>
                     <li className='navbar-options-element'>
                         <Link to='/experience'>Experience</Link>

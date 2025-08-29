@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { motion } from "motion/react";
 import ProjectModule from "./ProjectModule";
 
-export default function ProjectCard({ image, title, description, date }) {
+export default function ProjectCard({ image, title, description, date, skills }) {
 
     const [showOverlay, setShowOverlay] = useState(false);
     const dialogue = useRef();
@@ -16,7 +16,7 @@ export default function ProjectCard({ image, title, description, date }) {
 
     return (
         <>
-            <ProjectModule ref={dialogue} image={image} title={title} description={description} date={date} />
+            <ProjectModule ref={dialogue} image={image} title={title} description={description} date={date} skills={skills} />
             <motion.div className="project-image-container" onClick={handleClick}
                 onHoverStart={() => setShowOverlay(true)}
                 onHoverEnd={() => setShowOverlay(false)}

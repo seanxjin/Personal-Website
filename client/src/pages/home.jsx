@@ -16,9 +16,8 @@ function Home() {
 
     return (
         <>
-            <div id='hero-page-container'>
-                <Star_texture />
-                <Navbar />
+            <Navbar />
+            <Star_texture>
                 <BackgroundWallpaper scrollY={scrollY} />
                 <motion.div
                     id='title-name-container'
@@ -43,7 +42,7 @@ function Home() {
                     })}
                     <RotatingAspirations />
                 </motion.div>
-            </div >
+            </Star_texture>
             <About />
         </>
     );
