@@ -1,6 +1,6 @@
 import './home.css';
 // Components
-import Navbar from '../components/navbar';
+import Navbar from "../components/Navbar";
 import Star_texture from '../components/Star_texture';
 import RotatingAspirations from '../components/RotatingAspirations';
 import BackgroundWallpaper from '../components/BackgroundWallpaper';

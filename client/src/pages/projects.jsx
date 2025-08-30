@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { motion } from "motion/react";
 import "./projects.css";
 import ProjectCard from "../components/ProjectCard";

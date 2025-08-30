@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import Star_texture from "../components/Star_texture";
 import BackgroundWallpaper from "../components/BackgroundWallpaper";
 import Footer from "../components/Footer";
