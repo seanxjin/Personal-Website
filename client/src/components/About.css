@@ -31,9 +31,8 @@
 
 #about-content-container {
     display: flex;
-    gap: 7%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 
