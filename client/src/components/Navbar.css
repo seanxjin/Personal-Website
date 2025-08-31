@@ -47,3 +47,34 @@
     justify-content: space-around;
     gap: 3rem;
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    font-family: "Jersey 25", system-ui;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #navbar-options {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 1rem;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    #navbar-options.active {
+        display: flex;
+    }
+}

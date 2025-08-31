@@ -1,13 +1,17 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Navbar() {
+
+    const [toggleHamburger, setToggleHamgburger] = useState(false);
 
     return (
         <div id='navbar-wrapper'>
             <nav id="navbar-container">
                 <Link to='/'>Sean Jin</Link>
-                <ul id='navbar-options'>
+                <button class="menu-toggle" onClick={() => setToggleHamgburger(!toggleHamburger)}>☰</button>
+                <ul id='navbar-options' className={`${toggleHamburger ? "active" : ""}`}>
                     <li className='navbar-options-element'>
                         <Link to='/'>Home</Link>
                     </li>
