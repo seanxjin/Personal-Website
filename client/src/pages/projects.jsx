@@ -28,7 +28,7 @@ function Projects() {
                             start: { opacity: 0, scale: 0.5 },
                             end: { opacity: 1, scale: 1 }
                         }}
-                        transition={{ duration: 0.2, type: "spring", stiffness: 500 }} style={{ fontSize: "250%", fontFamily: "Boldonse" }}>
+                        transition={{ duration: 0.2, type: "spring", stiffness: 500 }} style={{ fontSize: "3.2vw", fontFamily: "Boldonse" }}>
                         My Projects
                     </motion.h1>
                     <div id="projects-card-container">
@@ -41,7 +41,7 @@ function Projects() {
                     <Button1 name="Home" link="/" left={true} />
                         <Button1 name="Experiences" link="/experience" left={false} />
                 </div>
-                <Footer/>
+                    <Footer />
                 </div>
             </Star_texture>
         </>

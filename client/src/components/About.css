@@ -11,12 +11,10 @@
 #about-container p,
 #about-container h2 {
     color: white;
-    font-family: "Boldonse", system-ui;
-    word-spacing: 0.55rem;
+    font-family: "Jersey 25", system-ui;
 }
 
 #about-container p {
-    font-size: 0.6rem;
     letter-spacing: 0.1rem;
     word-spacing: normal;
     width: 100%;
@@ -25,14 +23,23 @@
 
 #about {
     display: flex;
+    width: 100%;
     gap: 5%;
-    width: auto;
+}
+
+@media (max-width: 960px) {
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #about-content-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
 }
 
 

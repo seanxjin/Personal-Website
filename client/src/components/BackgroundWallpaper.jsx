@@ -21,8 +21,10 @@ export default function BackgroundWallpaper({ scrollY }) {
     const rightMountain = useTransform(scrollY, [0, 900], [0, 300]);
 
     return (
-        <>
+        <div style={{height: "100%", width: "100%"}}>
             <motion.img src={leftForest} alt="forest" style={{
+                width: "41%",
+                height: "auto",
                 position: "absolute",
                 left: "0",
                 bottom: "0",
@@ -30,6 +32,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 x: leftTree
             }}></motion.img>
             <motion.img src={rightForest} alt="forest" style={{
+                width: "35%",
+                height: "auto",
                 position: "absolute",
                 right: "0",
                 bottom: "0",
@@ -37,6 +41,8 @@ export default function BackgroundWallpaper({ scrollY }) {
                 x: rightTree
             }}></motion.img>
             <motion.img src={mountainleft} alt="mountain" style={{
+                width: "65%",
+                height: "auto",
                 position: "absolute",
                 bottom: "0",
                 zIndex: "7",
@@ -44,6 +50,8 @@ export default function BackgroundWallpaper({ scrollY }) {
             }}>
             </motion.img>
             <motion.img src={mountainRight} alt="mountain" style={{
+                width: "64%",
+                height: "auto",
                 position: "absolute",
                 bottom: "0",
                 right: "0",
@@ -63,8 +71,10 @@ export default function BackgroundWallpaper({ scrollY }) {
                 duration: 2,
                 ease: "easeIn"
             }} src={bird1} alt="bird" style={{
+                width: "2.4%",
+                height: "auto",
                 position: "absolute",
-                bottom: "32%",
+                bottom: "37%",
                 right: "37%",
                 zIndex: "7",
                 x: birdMoveX,
@@ -83,8 +93,10 @@ export default function BackgroundWallpaper({ scrollY }) {
                 duration: 2,
                 ease: "easeIn"
             }} src={bird2} alt="bird" style={{
+                width: "2.3%",
+                height: "auto",
                 position: "absolute",
-                bottom: "26%",
+                bottom: "31%",
                 right: "46%",
                 zIndex: "7",
                 x: birdMoveX,
@@ -103,9 +115,11 @@ export default function BackgroundWallpaper({ scrollY }) {
                 duration: 2,
                 ease: "easeIn"
             }} src={bird3} alt="bird" style={{
+                width: "2.4%",
+                height: "auto",
                 position: "absolute",
-                bottom: "21%",
-                right: "58%",
+                bottom: "26%",
+                right: "53%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -119,9 +133,11 @@ export default function BackgroundWallpaper({ scrollY }) {
                 duration: 2,
                 ease: "easeIn"
             }} src={bird5} alt="bird" style={{
+                width: "2.7%",
+                height: "auto",
                 position: "absolute",
-                bottom: "50%",
-                right: "18%",
+                bottom: "55%",
+                right: "13%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -135,9 +151,11 @@ export default function BackgroundWallpaper({ scrollY }) {
                 duration: 2,
                 ease: "easeIn"
             }} src={bird7} alt="bird" style={{
+                width: "2.7%",
+                height: "auto",
                 position: "absolute",
-                bottom: "45%",
-                right: "26%",
+                bottom: "50%",
+                right: "21%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
@@ -151,15 +169,17 @@ export default function BackgroundWallpaper({ scrollY }) {
                 duration: 2,
                 ease: "easeIn"
             }} src={bird8} alt="bird" style={{
+                width: "2%",
+                height: "auto",
                 position: "absolute",
-                bottom: "40%",
-                right: "40%",
+                bottom: "45%",
+                right: "30%",
                 zIndex: "7",
                 x: birdMoveX,
                 y: birdMoveY
             }}>
             </motion.img>
 
-        </>
+        </div>
     );
 }

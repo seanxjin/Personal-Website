@@ -24,7 +24,7 @@ export default function About() {
                     style={{
                         objectFit: "cover",
                         width: "40%",
-                        height: "40%",
+                        height: "auto",
                         borderRadius: "20px"
                     }}
                     variants={{
@@ -93,7 +93,7 @@ export default function About() {
                     </motion.div>
                 </motion.div>
             </div>
-            <div style={{width: "100%", display: "flex", justifyContent: "space-between", marginTop: "7rem"}}>
+            <div style={{width: "100%", display: "flex", justifyContent: "space-between", marginTop: "10%"}}>
                 <Button1 name="Experiences" link="/experience" left={true} />
                 <Button1 name="Projects" link="/projects" left={false} />
             </div>

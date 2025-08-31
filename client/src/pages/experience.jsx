@@ -41,7 +41,8 @@ function Experience() {
                             <motion.span
                                 style={{
                                     color: "white",
-                                    fontFamily: "Boldonse, system-ui"
+                                    fontFamily: "Boldonse, system-ui",
+                                    fontSize: "4vw"
                                 }}
                                 key={index}
                                 variants={{
@@ -57,19 +58,19 @@ function Experience() {
             <div id="experience-container">
                 <div style={{
                     display: "flex",
-                    height: "50%",
+                    paddingTop: "20rem",
                     flexDirection: "column",
                     justifyContent: "end",
                     alignItems: "center"
                 }}>
                     <h1>C o m i n g&nbsp;&nbsp; S o o n !</h1>
                 </div>
-                <div style={{ padding: "1% 10% 0 10%" }}>
-                <div style={{ width: "100%", display: "flex", justifyContent: "space-between", paddingTop: "10%" }}>
-                    <Button1 name="Home" link="/" left={true} />
-                    <Button1 name="Projects" link="/projects" left={false} />
-                </div>
-                <Footer />
+                <div style={{ padding: "10rem 5rem 1rem 5rem" }}>
+                    <div style={{ width: "100%", display: "flex", justifyContent: "space-between", paddingTop: "10%" }}>
+                        <Button1 name="Home" link="/" left={true} />
+                        <Button1 name="Projects" link="/projects" left={false} />
+                    </div>
+                    <Footer />
                 </div>
             </div >
         </>
