@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <div id='navbar-wrapper'>
             <nav id="navbar-container">
-                <Link to='/'>Sean Jin</Link>
+                <Link to='/'>Sean Jin</Link>asdasdadasdasdsadas
                 <button class="menu-toggle" onClick={() => setToggleHamgburger(!toggleHamburger)}>☰</button>
                 <ul id='navbar-options' className={`${toggleHamburger ? "active" : ""}`}>
                     <li className='navbar-options-element'>
