@@ -63,7 +63,7 @@ export default function Star_texture({ children }) {
             })}
             {meteors.map((meteor, index) => {
                 const { tail, ...meteorStyles } = meteor;
-                const sharedDelay = Math.random() * 3 + 2;
+                const sharedDelay = Math.random() * 6 + 1;
                 const sharedRepeatDelay = Math.random() * 10 + 5;
                 return (
                     <motion.div
