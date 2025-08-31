@@ -28,12 +28,12 @@ export default function ProjectModule({ ref, image, title, description, date, sk
         <motion.dialog ref={dialogue} className='project-dialogue' onClick={handleBackdropClick}>
             <div onClick={(e) => e.stopPropagation()} className='project-dialogue-div'>
                 <img src={image} alt={title} className="dialog-image" />
-                <div style={{ display: "flex", justifyContent: "space-around", width: "100%", marginBottom: "5%", fontFamily: "'Jersey 25'" }}>
+                <div style={{ display: "flex", justifyContent: "space-around", width: "100%", marginBottom: "5%", fontFamily: "'Jersey 25'", gap: "7%" }}>
                     <h1>{title}</h1>
                     <h1>{date}</h1>
                 </div>
                 <p style={{ textAlign: "center", marginBottom: "5%", padding: '0 2%', fontFamily: "'Jersey 25'" }}>{description}</p>
-                <div style={{display: "flex", gap: "1%", fontFamily: "'Jersey 25'", color: "white", alignItems:"center"}}>
+                <div style={{display: "flex", gap: "1%", fontFamily: "'Jersey 25'", color: "white", alignItems:"center", flexWrap: "wrap", minWidth: "90%", justifyContent: "center"}}>
                     Skills:&nbsp;&nbsp;{skills.map((skill, index) => {
                         return (
                             <span

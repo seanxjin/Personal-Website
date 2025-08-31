@@ -7,7 +7,8 @@
     top: 50%;
     left: 50%;
     width: 35rem;
-    height: 35rem;
+    height: max-content;
+    padding: 2%;
     transform: translate(-50%, -50%);
 
 }
@@ -23,9 +24,6 @@
     padding: 10px;
 }
 
-.project-dialogue-div {
-
-}
 
 .dialog-image {
     width: 100%;
