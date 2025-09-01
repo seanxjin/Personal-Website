@@ -23,7 +23,7 @@ export default function About() {
                     alt="Profile Pic"
                     style={{
                         objectFit: "cover",
-                        width: "40%",
+                        width: "35%",
                         height: "auto",
                         borderRadius: "20px"
                     }}
@@ -70,12 +70,12 @@ export default function About() {
                         transition={{ duration: 1, delay: 0.9, type: "tween", ease: "easeOut" }}>
                         Outside of all that nerdiness, I enjoy long-distance running, exploring the outdoors, jamming on guitar, and playing badminton.
                     </motion.p>
-                    <motion.h2
+                    <motion.h1
                         variants={{
                             hidden: { opacity: 0, x: 200 },
                             inView: { opacity: 1, x: 0 }
                         }}
-                        transition={{ duration: 1, delay: 1.2, type: "tween", ease: "easeOut" }}>Technologies</motion.h2>
+                        transition={{ duration: 1, delay: 1.2, type: "tween", ease: "easeOut" }}>Technologies</motion.h1>
                     <motion.div
                         variants={{
                             hidden: { opacity: 0 },
@@ -93,7 +93,7 @@ export default function About() {
                     </motion.div>
                 </motion.div>
             </div>
-            <div style={{width: "100%", display: "flex", justifyContent: "space-between", marginTop: "10%"}}>
+            <div style={{ width: "100%", display: "flex", justifyContent: "space-between", marginTop: "10%" }}>
                 <Button1 name="Experiences" link="/experience" left={true} />
                 <Button1 name="Projects" link="/projects" left={false} />
             </div>
