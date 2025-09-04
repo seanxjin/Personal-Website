@@ -3,6 +3,8 @@ import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Experience from "./pages/experience";
 import ScrollToTop from "./components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/react";
+
 
 
 
@@ -18,6 +20,8 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/experience" element={<Experience />} />
             </Routes>
+
+            <Analytics />
         </Router>
     );
 }
