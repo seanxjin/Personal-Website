@@ -35,6 +35,16 @@
     }
 }
 
+@media (min-width: 1440px) {
+    #about-content-container h1 {
+        font-size: 300%;
+    }
+    
+    #about-content-container p {
+        font-size: 150%;
+    }
+}
+
 #about-content-container {
     display: flex;
     flex-direction: column;
@@ -43,8 +53,9 @@
 }
 
 
+
+
 #about-skills-icons {
     display: flex;
     gap: 3%;
 }
-
