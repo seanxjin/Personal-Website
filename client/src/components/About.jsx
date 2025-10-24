@@ -1,5 +1,5 @@
 import "./About.css"
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile_photo.jpg";
 import javascriptIcon from "../assets/javascript.svg";
 import expressIcon from "../assets/express.svg";
 import motionIcon from "../assets/motion.svg";
@@ -25,7 +25,10 @@ export default function About() {
                         objectFit: "cover",
                         width: "35%",
                         height: "auto",
-                        borderRadius: "20px"
+                        borderRadius: "20px",
+                        aspectRatio: "1.25 / 1",
+                        minWidth: "200px",
+                        flexShrink: 0
                     }}
                     variants={{
                         hidden: { opacity: 0, y: 100 },
