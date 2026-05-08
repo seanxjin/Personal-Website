@@ -18,7 +18,7 @@ export default function About() {
     return (
         <div id="about-container">
             <div id="about">
-                <motion.img
+                <img
                     src={profilePic}
                     alt="Profile Pic"
                     style={{
@@ -30,75 +30,29 @@ export default function About() {
                         minWidth: "200px",
                         flexShrink: 0
                     }}
-                    variants={{
-                        hidden: { opacity: 0, y: 100 },
-                        inView: { opacity: 1, y: 0 }
-                    }}
-                    initial='hidden' whileInView='inView' transition={{ duration: 1.5, type: "tween", ease: "easeOut" }}
                 />
-                <motion.div variants={{
-                    hidden: {},
-                    inView: {}
-                }} initial='hidden' whileInView='inView'
-                    id="about-content-container">
-                    <motion.h1 variants={{
-                        hidden: { opacity: 0, x: 200 },
-                        inView: { opacity: 1, x: 0 },
-                    }}
-                        transition={{ duration: 1, type: "tween", ease: "easeOut" }}
-                    >
-                        Sean Jin
-                    </motion.h1>
-                    <motion.p
-                        variants={{
-                            hidden: { opacity: 0, x: 200 },
-                            inView: { opacity: 1, x: 0 }
-                        }}
-                        transition={{ duration: 1, delay: 0.3, type: "tween", ease: "easeOut" }}>
-                        Hello! I'm a 2nd year CS + Stats Major at the University of British Columbia. I love working on fun brain teaser problems and cool projects that challenge my creativity and problem-solving skills!
-                    </motion.p>
-                    <motion.p
-                        variants={{
-                            hidden: { opacity: 0, x: 200 },
-                            inView: { opacity: 1, x: 0 }
-                        }}
-                        transition={{ duration: 1, delay: 0.6, type: "tween", ease: "easeOut" }}>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "2em",
+                }}>
+                    <h1 style={{
+                        fontSize: "1.5em"
+                    }}>
+                        About Me
+                    </h1>
+                    <p style={{
+                        fontSize: "1.2em"
+                    }}>
+                        With a strong foundation in software development, I am passionate about tackling complex challenges and developing solutions that create meaningful impact. 
+                    </p>
+                    <p>
                         My technical interests include full-stack development, data science, and AI/ML.
-                    </motion.p>
-                    <motion.p
-                        variants={{
-                            hidden: { opacity: 0, x: 200 },
-                            inView: { opacity: 1, x: 0 }
-                        }}
-                        transition={{ duration: 1, delay: 0.9, type: "tween", ease: "easeOut" }}>
+                    </p>
+                    <p>
                         Outside of all that nerdiness, I enjoy long-distance running, exploring the outdoors, jamming on guitar, and playing badminton.
-                    </motion.p>
-                    <motion.h1
-                        variants={{
-                            hidden: { opacity: 0, x: 200 },
-                            inView: { opacity: 1, x: 0 }
-                        }}
-                        transition={{ duration: 1, delay: 1.2, type: "tween", ease: "easeOut" }}>Technologies</motion.h1>
-                    <motion.div
-                        variants={{
-                            hidden: { opacity: 0 },
-                            inView: { opacity: 1 }
-                        }}
-                        transition={{ duration: 1, delay: 1.5, type: "tween", ease: "easeIn" }} id="about-skills-icons">
-                        <Icon image={javascriptIcon} alt="javascript-icon" />
-                        <Icon image={nodeIcon} alt="node-icon" />
-                        <Icon image={expressIcon} alt="express-icon" />
-                        <Icon image={reactIcon} alt="react-icon" />
-                        <Icon image={motionIcon} style={{ backgroundColor: "yellow" }} alt="motion-icon" />
-                        <Icon image={postgresIcon} alt="postgres-icon" />
-                        <Icon image={sqliteIcon} alt="sqlite-icon" />
-                        <Icon image={pythonIcon} alt="python-icon" />
-                    </motion.div>
-                </motion.div>
-            </div>
-            <div style={{ width: "100%", display: "flex", justifyContent: "space-between", marginTop: "10%" }}>
-                <Button1 name="Experiences" link="/experience" left={true} />
-                <Button1 name="Projects" link="/projects" left={false} />
+                    </p>
+                </div>
             </div>
             <Footer />
         </div>
